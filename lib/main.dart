@@ -8,6 +8,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import 'MapStyle/numbers.dart';
+import 'components/Minimenu.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,13 +24,28 @@ class MyApp extends StatelessWidget {
               maxHeight: 150,
               minHeight: 450,
               borderRadius: radiusMenuSwap,
-              panel: Center(
-                child: Text("This is the slidinsssssg Widgetsda"),
-              ),
-              header:  Stack(
+              panel: Stack(
                 children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Minimenu(icon: CupertinoIcons.airplane,title: "Mission"),
+                          Minimenu(icon: CupertinoIcons.airplane,title: "Mission"),
+                          Minimenu(icon: CupertinoIcons.airplane,title: "Mission"),
+
+
+
+
+                        ],
+                      ),
+                    ),
+                  ),
 
                 ],
+
               ),
               body: Center(
                 child: MapSample(),

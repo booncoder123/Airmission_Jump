@@ -50,19 +50,13 @@ class MapSampleState extends State<MapSample> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              MaterialButton(
-                height: 80,
-                minWidth: 80,
-                onPressed: () {},
+              Icon(
+                Icons.cloud_circle_sharp,
+                size: 80,
                 color: Colors.white,
-                textColor: Color(0xffA5D3B1),
-                child: Icon(
-                  Icons.wb_cloudy,
-                  size: 50,
-                ),
-                shape: CircleBorder(),
-                padding: EdgeInsets.only(top: 30, bottom: 30),
-              ),
+
+              )
+              ,
               Row(
                 children: [
                   Padding(
@@ -74,7 +68,7 @@ class MapSampleState extends State<MapSample> {
                       color: Colors.white,
                       textColor: Color(0xffA4C9ED),
                       child: Icon(
-                        Icons.ac_unit,
+                        Icons.accessibility,
                         size: 24,
                       ),
                       shape: CircleBorder(),

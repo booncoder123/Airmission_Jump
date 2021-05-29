@@ -1,11 +1,12 @@
-[{
-  "elementType": "geometry",
-  "stylers": [
-    {
-      "color": "#f5f5f5"
-    }
-  ]
-},
+[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
   {
     "elementType": "labels.icon",
     "stylers": [
